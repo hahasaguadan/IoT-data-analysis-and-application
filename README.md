@@ -1,4 +1,6 @@
-# Flask-based Linear Regression Plot Project
+# IoT-data-analysis-and-application
+
+# Flask-based Linear Regression Plot Project(HW1-1)
 
 ## Overview
 
@@ -81,4 +83,19 @@ The project uses a non-interactive `matplotlib` backend (`Agg`) to handle plots,
 ## Code Prompt for Version 1
 
 To generate this project in the future, use the following prompt:
+    ```bash
+Generate a Flask-based Python project that includes two files: app.py and index.html. The project should allow the user to modify parameters for a linear regression plot via sliders, with the plot updating dynamically in real-time. The parameters are:
 
+Slope (a): from -10 to 10
+Intercept (b): from 0 to 100
+Noise factor (c): from 0 to 100
+Variance: from 1 to 50
+Number of points (n): from 10 to 1000
+The regression plot should show the data points in blue and the regression line in red. Use the matplotlib library to generate the plot, and ensure that it is displayed on the same page using Flask. The page should allow the user to adjust the parameters via sliders and see the plot update immediately.
+
+Here is the structure of the project:
+
+app.py - A Flask application that generates a linear regression plot based on user inputs and sends the plot as a base64 image to the frontend.
+index.html - An HTML page that contains sliders for the parameters and displays the plot.
+Make sure the app uses a non-interactive matplotlib backend (Agg) to handle plots, and the plot is sent to the frontend as a base64-encoded PNG image.
+    ```
