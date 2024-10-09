@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+</head>
+<body>
+    <h1>Linear Regression Model</h1>
+    
+    <form method="POST">
+        <label for="a">Slope (a): </label>
+        <input type="range" id="a" name="a" min="-10" max="10" step="0.1" value="{{ a }}">
+        <br>
+        
+        <label for="b">Intercept (b): </label>
+        <input type="range" id="b" name="b" min="0" max="100" step="1" value="{{ b }}">
+        <br>
+        
+        <label for="c">Noise Factor (c): </label>
+        <input type="range" id="c" name="c" min="0" max="100" step="1" value="{{ c }}">
+        <br>
+        
+        <label for="variance">Variance: </label>
+        <input type="range" id="variance" name="variance" min="1" max="50" step="1" value="{{ variance }}">
+        <br>
+        
+        <label for="n">Number of Points (n): </label>
+        <input type="range" id="n" name="n" min="10" max="1000" step="10" value="{{ n }}">
+        <br><br>
+        
+        <input type="submit" value="Update">
+    </form>
+    
+    <img src="data:image/png;base64,{{ img }}" alt="Linear Regression Plot">
+</body>
+</html>
+
