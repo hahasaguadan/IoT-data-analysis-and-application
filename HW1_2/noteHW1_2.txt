@@ -1,0 +1,28 @@
+Here is the prompt that can generate "code3" and "code4":
+
+Prompt:
+
+Create two files: "c1" and "c2".
+
+c1 (Python Flask application):
+
+The application should be a stock price prediction tool using multiple linear regression.
+Follow the CRISP-DM methodology.
+Load the dataset, clean it, and perform feature selection using three methods: Mutual Information, Recursive Feature Elimination (RFE), and SelectKBest.
+Calculate RMSE for different feature subsets and generate two plots:
+The first plot shows the actual vs predicted stock prices for the best feature combination.
+The second plot compares RMSE across different feature subsets using the three feature selection algorithms (Mutual Information, RFE, SelectKBest).
+Use Flask to create a web interface where users can select features, view model evaluation metrics (RMSE and R-squared), and visualize the results.
+Include the necessary imports such as Pandas, NumPy, Matplotlib, Scikit-Learn, and Flask.
+c2 (HTML file):
+
+Create an HTML template for the Flask application.
+Use Bootstrap for styling.
+The page should contain:
+A title: "Stock Price Prediction".
+The feature selection RMSE plot displayed at the top.
+A form where users can select features to use in the model.
+After the form submission, display the following sections:
+Model evaluation metrics (RMSE and R-squared).
+A chart showing actual vs predicted stock prices.
+A table listing all feature combinations with their corresponding RMSE and R-squared values.
